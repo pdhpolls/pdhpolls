@@ -175,6 +175,3 @@ body {
 	width: 100%;
 	height: 0px;
 }
-#date > div::before {
-	content: attr(id);
-}
