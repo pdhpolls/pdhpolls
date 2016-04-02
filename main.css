@@ -186,3 +186,11 @@ body {
 [data-open="false"], [data-view="false"] {
 	display: none !important;
 }
+#date > div::after {
+	content: "";
+	display: block;
+	height: 10px;
+}
+#date > div::before {
+	content: attr(id);
+}
