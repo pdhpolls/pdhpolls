@@ -1,1 +1,3 @@
-console.log("here");
+$(".up").on("click", function() {
+	goUp(this.firstChild);
+});
