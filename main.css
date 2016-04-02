@@ -60,15 +60,21 @@ body {
 	max-width: 500px;
 	height: 40px;
 }
-#dates::before {
+/*#dates::before {
 	content: "\25BC";
 	display: block;
 	position: absolute;
 	top: 40%;
 	right: calc(50% + 6px);
 	z-index: 100;
-}
+}*/
 #dates > div {
+	display: inline-block;
+	position: relative;
+	margin-left: -50%;
+	width: 100%;
+}
+#dates > div > div {
 	background-color: #FFFFFF;
 	border: 1px solid;
 	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
@@ -76,7 +82,6 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	display: inline-block;
-	margin-left: -50%;
 	width: 100%;
 	height: 40px;
 	text-align: center;

@@ -1,10 +1,3 @@
-$("#date > div").hide();
-$("#space").show();
-$("#d403").show()
-
-$("#dates > div").hide();
-$("#dd403").show();
-
 function upFunc() {
 	if(this.parentNode.getAttribute("data-stat") != "up") {
 		this.parentNode.setAttribute("data-stat", "up");
@@ -25,18 +18,6 @@ function downFunc() {
 		this.setAttribute("data-trans", "true");
 	}
 }
-function openFunc() {
-	if(this.parentNode.getAttribute("data-open") != "true") {
-		$("#dates > div").show();
-		this.parentNode.setAttribute("data-open", "true");
-	} else {
-		this.parentNode.setAttribute("data-open", "false");
-		$("#dates > div").hide();
-		$("#date > div").hide();
-		$("#" + this.id).show();
-		$("#d" + this.id.split("dd")[1]).show();
-	}
-}
 function isMobile() {
 	return false;
   var check = false;
@@ -47,9 +28,7 @@ function isMobile() {
 if(isMobile()) {
 	$(".up").on("touchend", upFunc);
 	$(".down").on("touchend", downFunc);
-	$("#dates > div").on("touchend", openFunc);
 } else {
 	$(".up").on("click", upFunc);
 	$(".down").on("click", downFunc);
-	$("#dates > div").on("click", openFunc);
 }
