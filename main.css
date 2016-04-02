@@ -60,11 +60,13 @@ body {
 	height: 100%;
 	max-width: 500px;
 	padding-top: 43px;
+	background-color: red;
 }
 #date > div {
 	position: relative;
-	width: 100%;
+	width: calc(100% - 12px);
 	height: 140px;
+	margin-left: 6px;
 	background-color: #FFFFFF;
 	margin-top: 12px;
         border: 1px solid;
