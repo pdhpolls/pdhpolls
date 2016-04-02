@@ -60,51 +60,45 @@ body {
 	height: 100%;
 	max-width: 500px;
 	padding-top: 43px;
+	padding-bottom: 3px;
+	background-color: red;
 }
-#date > div {
+.item {
 	position: relative;
 	width: calc(100% - 12px);
 	height: 140px;
 	margin-left: 6px;
 	background-color: #FFFFFF;
-	margin-top: 12px;
+	margin-top: 6px;
 	border: 1px solid;
 	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
 	border-radius: 3px;
-	padding: 12px;
 	box-sizing: border-box;
 }
-.image {
-	display: block;
-	position: relative;
-	width: 153px;
-	height: 100%;
-	overflow: hidden;
-	background-position: 50%;
-	background-repeat: no-repeat;
+.label {
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 6px;
+}
+.up {
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	width: 60px;
+	height: 60px;
+	background-image: url(http://i.imgur.com/9HSS25t.png);
 	background-size: cover;
 }
-.link {
+.down {
 	position: absolute;
-	top: calc(50% - 10px);
-	font-size: 20px;
-	color: #3b5998;
-	cursor: pointer;
-	text-decoration: none;
-	font-weight: bold;
-	left: 200px;
-}
-.link:hover {
-	text-decoration: underline;
-}
-.site {
-	color: gray;
-	position: absolute;
-	bottom: 12px;
-	right: 12px;
-}
-#spacer {
-	position: relative;
-	display: inline-block;
-	margin-top: 12px;
+	bottom: 6px;
+	left: 6px;
+	width: 60px;
+	height: 60px;
+	background-image: url(http://i.imgur.com/4LYnori.png);
+	background-size: cover;
 }
