@@ -60,7 +60,6 @@ body {
 	height: 100%;
 	max-width: 500px;
 	padding-top: 43px;
-	padding-bottom: 3px;
 	color: rgba(0,0,0,0.65);
 }
 .item {
@@ -107,4 +106,9 @@ body {
 	background-image: url(http://i.imgur.com/4LYnori.png);
 	background-size: cover;
 	opacity: 0.5;
+}
+#space {
+	display: inline-block;
+	width: 100%;
+	height: 0px;
 }
