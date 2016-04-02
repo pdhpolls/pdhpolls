@@ -61,7 +61,7 @@ body {
 	max-width: 500px;
 	padding-top: 43px;
 	padding-bottom: 3px;
-	background-color: red;
+	color: rgba(0,0,0,0.65);
 }
 .item {
 	position: relative;
@@ -87,18 +87,20 @@ body {
 .up {
 	position: absolute;
 	top: 6px;
-	left: 6px;
+	right: 6px;
 	width: 60px;
 	height: 60px;
 	background-image: url(http://i.imgur.com/9HSS25t.png);
 	background-size: cover;
+	opacity: 0.5;
 }
 .down {
 	position: absolute;
 	bottom: 6px;
-	left: 6px;
+	right: 6px;
 	width: 60px;
 	height: 60px;
 	background-image: url(http://i.imgur.com/4LYnori.png);
 	background-size: cover;
+	opacity: 0.5;
 }
