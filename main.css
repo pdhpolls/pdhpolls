@@ -112,6 +112,8 @@ body {
 	position: relative;
 	width: calc(100% - 12px);
 	height: 140px;
+	line-height: 140px;
+	padding-left: 6px;
 	margin-left: 6px;
 	background-color: #FFFFFF;
 	margin-top: 6px;
@@ -119,6 +121,7 @@ body {
 	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
 	border-radius: 3px;
 	box-sizing: border-box;
+	overflow: hidden;
 }
 .label {
 	height: 30px;
@@ -173,9 +176,10 @@ body {
 }
 .up::before, .down::before {
 	position: absolute;
-	top: 41%;
-	right: 111%;
+	top: -35px;
+	right: 80px;
 	content: attr(data-cntL);
+	pointer-events: none;
 }
 [data-trans="false"]::after {
 	opacity: 1;
