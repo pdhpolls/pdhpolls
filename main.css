@@ -54,7 +54,7 @@ body {
 }
 #dates {
 	position: fixed;
-	top: 40px;
+	top: 0px;
 	left: 50%;
 	width: 100%;
 	max-width: 500px;
@@ -72,6 +72,7 @@ body {
 	display: inline-block;
 	position: relative;
 	margin-left: -50%;
+	margin-top: 43px;
 	width: 100%;
 	max-height: calc(100vh - 43px);
 	overflow: scroll;
@@ -181,4 +182,7 @@ body {
 	display: inline-block;
 	width: 100%;
 	height: 0px;
+}
+[data-open="false"], [data-view="false"] {
+	display: none !important;
 }

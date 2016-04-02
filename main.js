@@ -18,6 +18,18 @@ function downFunc() {
 		this.setAttribute("data-trans", "true");
 	}
 }
+function openFunc() {
+	if(this.parentNode.parentNode.getAttribute("data-isopen") == "true") {
+		$("#dates > div > div").attr("data-open", "false");
+		$("#" + this.id).attr("data-open", "true");
+		$("#date > div").attr("data-view", "false");
+		$("#" + this.id.substring(1)).attr("data-view", "true");
+		this.parentNode.parentNode.setAttribute("data-isopen", "false");
+	} else {
+		$("#dates > div > div").attr("data-open", "true");
+		this.parentNode.parentNode.setAttribute("data-isopen", "true");
+	}
+}
 function isMobile() {
 	return false;
   var check = false;
@@ -28,7 +40,12 @@ function isMobile() {
 if(isMobile()) {
 	$(".up").on("touchend", upFunc);
 	$(".down").on("touchend", downFunc);
+	$("#dates > div > div").on("touchstart", openFunc);
 } else {
 	$(".up").on("click", upFunc);
 	$(".down").on("click", downFunc);
+	$("#dates > div > div").on("click", openFunc);
 }
+
+$("#dd403").click();
+$("#dd403").click();
