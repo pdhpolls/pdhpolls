@@ -60,14 +60,19 @@ body {
 	max-width: 500px;
 	height: 40px;
 }
-/*#dates::before {
+#dates > div::after, #dates > div::before {
 	content: "\25BC";
 	display: block;
 	position: absolute;
-	top: 40%;
-	right: calc(50% + 6px);
+	top: 15px;
+	right: 12px;
 	z-index: 100;
-}*/
+	pointer-events: none;
+}
+#dates > div::after {
+	right: auto;
+	left: 12px;
+}
 #dates > div {
 	display: inline-block;
 	position: relative;
@@ -190,7 +195,7 @@ body {
 	content: "";
 	display: block;
 	height: 10px;
-}
+}/*
 #date > div::before {
 	content: attr(id);
-}
+}*/
