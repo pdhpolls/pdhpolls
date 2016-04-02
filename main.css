@@ -95,7 +95,6 @@ body {
 	height: 60px;
 	background-image: url(http://i.imgur.com/9HSS25t.png);
 	background-size: cover;
-	opacity: 0.5;
 }
 .down {
 	position: absolute;
@@ -105,7 +104,20 @@ body {
 	height: 60px;
 	background-image: url(http://i.imgur.com/4LYnori.png);
 	background-size: cover;
-	opacity: 0.5;
+}
+.up > div, .down > div {
+	position: absolute;
+	top: 42%;
+	right: 111%;
+}
+.up > div > span, .down > div > span {
+	display: inline;
+}
+[data-trans="true"] {
+	opacity: 0.4;
+}
+[data-trans="false"] {
+	opacity: 1;
 }
 #space {
 	display: inline-block;
