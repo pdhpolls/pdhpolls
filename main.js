@@ -60,7 +60,7 @@ if(isMobile()) {
 	$(".invalid .up").on("click", showMes);
 	$(".invalid .down").on("click", showMes);
 	
-	$("#close").on("touchend", hideMes);
+	$("#close").on("click", hideMes);
 }
 
 $("#dd403").click();

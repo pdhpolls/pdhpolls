@@ -275,6 +275,6 @@ body {
 	color: #FFFFFF;
 	line-height: 75px;
 }
-#close:active {
+#close:active, #close:hover {
 	background-color: #FFFFFF;
 }
