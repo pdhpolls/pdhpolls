@@ -229,7 +229,6 @@ body {
 	left: 50%;
 	height: 200px;
 	width: 400px;
-	background-color: red;
 }
 #box > div {
 	position: absolute;
@@ -237,8 +236,44 @@ body {
 	left: -50%;
 	width: 100%;
 	height: 100%;
-	background-color: blue;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
+	background-color: #FFFFFF;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: rgba(0,0,0,0.5);
+	font-size: 25px;
+	text-align: center;
+	line-height: 130px;
 }
 #box[data-showbox="false"] {
 	display: none;
+}
+#close {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: rgba(0,0,0,0.2);
+	border: 4px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	border-radius: 13px;
+	width: 90%;
+	position: absolute;
+	display: block;
+	bottom: 5%;
+	left: 5%;
+	height: 40%;
+	box-sizing: border-box;
+	font-size: 40px;
+	color: #FFFFFF;
+	line-height: 75px;
+}
+#close:active {
+	background-color: #FFFFFF;
 }
