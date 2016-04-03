@@ -112,7 +112,6 @@ body {
 	position: relative;
 	width: calc(100% - 12px);
 	height: 140px;
-	line-height: 140px;
 	padding-left: 6px;
 	margin-left: 6px;
 	background-color: #FFFFFF;
@@ -140,8 +139,8 @@ body {
 	position: absolute;
 	top: 6px;
 	right: 6px;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 }
 .up::after {
 	content: "";
@@ -159,8 +158,8 @@ body {
 	position: absolute;
 	bottom: 6px;
 	right: 6px;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 }
 .down::after {
 	content: "";
@@ -176,10 +175,19 @@ body {
 }
 .up::before, .down::before {
 	position: absolute;
-	top: -35px;
-	right: 80px;
+	top: -1px;
+	right: 60px;
 	content: attr(data-cntL);
 	pointer-events: none;
+	line-height: 60px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.up::before {
+	color: rgba(13,213,178,1);
+}
+.down::before {
+	color: rgba(0,0,0,0.4);
 }
 [data-trans="false"]::after {
 	opacity: 1;
@@ -203,3 +211,17 @@ body {
 #date > div::before {
 	content: attr(id);
 }*/
+.item {
+	height: auto;
+	padding-bottom: 12px;
+	padding-top: 6px;
+}
+.item.big > div {
+	font-size: 0.85em;
+	font-weight: normal;
+}
+.item.big > div > div {
+	font-size: 0.9em;
+	height: 120px;
+	line-height: 100px;
+}
