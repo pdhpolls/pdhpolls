@@ -30,6 +30,12 @@ function openFunc() {
 		this.parentNode.parentNode.setAttribute("data-isopen", "true");
 	}
 }
+function showMes() {
+	$("#box").attr("data-showbox", "true");
+}
+function hideMes() {
+	$("#box").attr("data-showbox", "false");
+}
 function isMobile() {
 	return false;
   var check = false;
@@ -41,10 +47,20 @@ if(isMobile()) {
 	$(".up").on("touchend", upFunc);
 	$(".down").on("touchend", downFunc);
 	$("#dates > div > div").on("touchstart", openFunc);
+	
+	$(".invalid .up").on("touchend", showMes);
+	$(".invalid .down").on("touchend", showMes);
+	
+	$("#close").on("touchend", hideMes);
 } else {
-	$(".up").on("click", upFunc);
-	$(".down").on("click", downFunc);
+	$(".valid .up").on("click", upFunc);
+	$(".valid .down").on("click", downFunc);
 	$("#dates > div > div").on("click", openFunc);
+	
+	$(".invalid .up").on("click", showMes);
+	$(".invalid .down").on("click", showMes);
+	
+	$("#close").on("touchend", hideMes);
 }
 
 $("#dd403").click();
