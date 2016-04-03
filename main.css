@@ -64,10 +64,11 @@ body {
 	content: "\25BC";
 	display: block;
 	position: absolute;
-	top: 25px;
+	top: 17px;
 	right: 12px;
 	z-index: 100;
 	pointer-events: none;
+	font-size: 1.5em;
 }
 #dates > div::after {
 	right: auto;
