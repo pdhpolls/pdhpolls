@@ -112,7 +112,6 @@ body {
 	position: relative;
 	width: calc(100% - 12px);
 	height: 140px;
-	padding-left: 6px;
 	margin-left: 6px;
 	background-color: #FFFFFF;
 	margin-top: 6px;
@@ -129,7 +128,6 @@ body {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	padding-left: 24px;
 }
 .big {
 	font-weight: bold;
@@ -215,6 +213,7 @@ body {
 	height: auto;
 	padding-bottom: 12px;
 	padding-top: 6px;
+	padding-left: 6px;
 }
 .item.big > div {
 	font-size: 0.85em;
